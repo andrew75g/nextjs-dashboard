@@ -1,0 +1,39 @@
+# Copy from .env.local on the Vercel dashboard
+# https://nextjs.org/learn/dashboard-app/setting-up-your-database#create-a-postgres-database
+POSTGRES_URL=
+POSTGRES_PRISMA_URL=
+POSTGRES_URL_NON_POOLING=
+POSTGRES_USER=
+POSTGRES_HOST=
+POSTGRES_PASSWORD=
+POSTGRES_DATABASE=
+
+# `openssl rand -base64 32`
+AUTH_SECRET=
+AUTH_URL=http://localhost:3000/api/auth
+AUTH_SECRET=your-secret-key
+
+# Recommended for most uses
+DATABASE_URL=postgres://neondb_owner:FKR2U5bqZWto@ep-lingering-band-a4e6krd4-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require
+
+# For uses requiring a connection without pgbouncer
+DATABASE_URL_UNPOOLED=postgresql://neondb_owner:FKR2U5bqZWto@ep-lingering-band-a4e6krd4.us-east-1.aws.neon.tech/neondb?sslmode=require
+
+# Parameters for constructing your own connection string
+PGHOST=ep-lingering-band-a4e6krd4-pooler.us-east-1.aws.neon.tech
+PGHOST_UNPOOLED=ep-lingering-band-a4e6krd4.us-east-1.aws.neon.tech
+PGUSER=neondb_owner
+PGDATABASE=neondb
+PGPASSWORD=FKR2U5bqZWto
+
+# Parameters for Vercel Postgres Templates
+POSTGRES_URL=postgres://neondb_owner:FKR2U5bqZWto@ep-lingering-band-a4e6krd4-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require
+POSTGRES_URL_NON_POOLING=postgres://neondb_owner:FKR2U5bqZWto@ep-lingering-band-a4e6krd4.us-east-1.aws.neon.tech/neondb?sslmode=require
+POSTGRES_USER=neondb_owner
+POSTGRES_HOST=ep-lingering-band-a4e6krd4-pooler.us-east-1.aws.neon.tech
+POSTGRES_PASSWORD=FKR2U5bqZWto
+POSTGRES_DATABASE=neondb
+POSTGRES_URL_NO_SSL=postgres://neondb_owner:FKR2U5bqZWto@ep-lingering-band-a4e6krd4-pooler.us-east-1.aws.neon.tech/neondb
+POSTGRES_PRISMA_URL=postgres://neondb_owner:FKR2U5bqZWto@ep-lingering-band-a4e6krd4-pooler.us-east-1.aws.neon.tech/neondb?pgbouncer=true&connect_timeout=15&sslmode=require
+
+AUTH_SECRET= Uf5IVJlKx49p3EEBdPczjWH3heP9XIL3Vek4GooOurA=
